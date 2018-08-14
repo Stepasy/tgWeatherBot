@@ -1,6 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api');
 const fs = require("fs");
-const token = '577254993:AAGkQzsSQj3ZMfnWJTIg6t2qgIYlHlKYJGg';
+const token = '';
 const bot = new TelegramBot(token, { polling: true });
 const chatId = '@vagidashoroscopes';
 
