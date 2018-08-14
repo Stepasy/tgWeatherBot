@@ -1,0 +1,16 @@
+{
+  "name": "parserbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Dima",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "node-telegram-bot-api": "^0.30.0",
+    "osmosis": "^1.1.8"
+  }
+}
