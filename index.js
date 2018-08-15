@@ -1,3 +1,4 @@
+require('./server');
 const osmosis = require('osmosis');
 const fs = require('fs');
 const schedule = require('node-schedule');
