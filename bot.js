@@ -11,10 +11,14 @@ let contents = fs.readFileSync("data.json");
 let jsonContent = JSON.parse(contents);
 let curDate = new Date().getHours() + ':' + new Date().getMinutes();
 
+server.connection({
+    port: process.env.PORT || 3000 
+});
+
 
 bot.on('message', function (msg) {
     var chatId = msg.chat.id;
-    bot.sendPhoto(chatId, 'rabotaem?');
+    bot.sendMessage(chatId, 'rabotaem?');
 });
 
 let sendMessage = schedule.scheduleJob('48 11 * * *', function(){
