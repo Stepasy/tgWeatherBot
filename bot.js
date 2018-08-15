@@ -15,10 +15,20 @@ bot.on('message', function (msg) {
     bot.sendMessage(chatId, 'rabotaem?');
 });
 
+function sleep(ms) {
+    let start = new Date().getTime();
+    for (let i = 0; i < 1e7; i++) {
+      if ((new Date().getTime() - start) > milliseconds){
+        break;
+      }
+    }
+  }
+
 let sendMessage = schedule.scheduleJob(process.env.SEND_TIME, function(){
     for (let i = 0; i < jsonContent.length; i++) {
 
             bot.sendMessage(chatId, jsonContent[i].sign + '\n' + '\n' + jsonContent[i].content)
+            sleep(5000);
 
         }
   });
