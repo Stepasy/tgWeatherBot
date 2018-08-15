@@ -11,11 +11,6 @@ let contents = fs.readFileSync("data.json");
 let jsonContent = JSON.parse(contents);
 let curDate = new Date().getHours() + ':' + new Date().getMinutes();
 
-server.connection({
-    port: process.env.PORT || 3000 
-});
-
-
 bot.on('message', function (msg) {
     var chatId = msg.chat.id;
     bot.sendMessage(chatId, 'rabotaem?');
