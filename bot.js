@@ -16,7 +16,7 @@ bot.on('message', function (msg) {
 });
 
 
-let sendTestMessage = schedule.scheduleJob('00 18 * * *', function(){
+let sendTestMessage = schedule.scheduleJob('00 15 * * *', function(){
 
   bot.sendMessage('299115034', 'Я жив братан');
 
