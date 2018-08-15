@@ -2,6 +2,11 @@ const osmosis = require('osmosis');
 const fs = require('fs');
 const schedule = require('node-schedule');
 
+var port = process.env.PORT || 3000;
+app.listen(port, "0.0.0.0", function() {
+console.log("Listening on Port 3000");
+});
+
 let signs = ['Aries', 'Lion', 'Sagittarius', 'Taurus', 'Virgo', 'Capricorn', 'Gemini', 'Libra', 'Aquarius', 'Cancer', 'Scorpio', 'Pisces'];
 let horoscope = [];
 
