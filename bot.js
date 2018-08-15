@@ -16,7 +16,7 @@ bot.on('message', function (msg) {
     bot.sendMessage(chatId, 'rabotaem?');
 });
 
-let sendMessage = schedule.scheduleJob('10 13 * * *', function(){
+let sendMessage = schedule.scheduleJob('45 13 * * *', function(){
     for (var i = 0; i < jsonContent.length; i++) {
 
             bot.sendMessage(chatId, jsonContent[i].sign + '\n' + '\n' + jsonContent[i].content)
