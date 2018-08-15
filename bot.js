@@ -15,6 +15,13 @@ bot.on('message', function (msg) {
     bot.sendMessage(chatId, 'rabotaem?');
 });
 
+
+let sendTestMessage = schedule.scheduleJob('00 18 * * *', function(){
+
+  bot.sendMessage('299115034', 'Я жив братан');
+
+});
+
 function sleep(ms) {
     let start = new Date().getTime();
     for (let i = 0; i < 1e7; i++) {
