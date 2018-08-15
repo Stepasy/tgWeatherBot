@@ -11,6 +11,12 @@ let contents = fs.readFileSync("data.json");
 let jsonContent = JSON.parse(contents);
 let curDate = new Date().getHours() + ':' + new Date().getMinutes();
 
+
+bot.on('message', function (msg) {
+    var chatId = msg.chat.id;
+    bot.sendPhoto(chatId, 'rabotaem?');
+});
+
 let sendMessage = schedule.scheduleJob('48 11 * * *', function(){
     for (var i = 0; i < jsonContent.length; i++) {
 

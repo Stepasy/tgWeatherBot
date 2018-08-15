@@ -2,19 +2,19 @@
   "name": "parserbot",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "8.11.3"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "engines": {
-    "node": "8.11.3"
-  },
-  "author": "Dima",
-  "license": "MIT",
   "dependencies": {
     "fs": "0.0.1-security",
     "node-schedule": "^1.3.0",
     "node-telegram-bot-api": "^0.30.0",
     "osmosis": "^1.1.8"
-  }
+  },
+  "author": "Dima",
+  "license": "MIT"
 }
