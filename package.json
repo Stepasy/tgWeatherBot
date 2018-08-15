@@ -2,9 +2,6 @@
   "name": "parserbot",
   "version": "1.0.0",
   "description": "",
-  "engines": {
-    "node": "8.11.3"
-  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
